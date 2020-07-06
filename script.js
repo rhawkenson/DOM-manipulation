@@ -43,3 +43,22 @@ divPara.textContent = "ME TOO!";
 div.appendChild(divPara);
 
 container.appendChild(div);
+
+//Button alert using a function 
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert("Hello, World");
+
+//Button alert using an event listener 
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', () => {
+    alert("Hello World");
+});
+
+//Keep buttons blue after click
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
+  btn2.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
+  
